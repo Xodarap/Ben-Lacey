@@ -67,12 +67,12 @@ function Hero({ classes }) {
         <div style={{ alignSelf: 'center', padding: '10px' }}>
           <Typography variant='h3' style={{ marginTop: '30px' }}> Ben ♡ Lacey</Typography><br />
           <Typography variant='body1' style={{ marginTop: '30px' }}>
-            A record of our relationship and the things we've done together.
+            Gifts that Ben has given Lacey.
           </Typography>
         </div>
       </Grid>
       <Grid item xs={12} md={6} style={{ justifyContent: 'center', display: 'flex', alignItems: 'center' }}>
-        <img src="/headshot.jpg" style={{ height: '85%', maxWidth: '100%' }} />
+        <img src="/images/us.jpg" style={{ height: '85%', maxWidth: '100%' }} />
       </Grid>
     </Grid></Container>
 }

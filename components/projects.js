@@ -1,23 +1,15 @@
-import PetsIcon from '@material-ui/icons/Pets';
-import TwitterIcon from '@material-ui/icons/Twitter';
+import ImageIcon from '@material-ui/icons/Image';
 import GitHubIcon from '@material-ui/icons/GitHub';
-import TiktokIcon from './tiktok_icon';
-import SpeedIcon from '@material-ui/icons/Speed';
 import HttpIcon from '@material-ui/icons/Http';
-import FaceIcon from '@material-ui/icons/Face';
-import MoodIcon from '@material-ui/icons/Mood';
-import FunctionsIcon from '@material-ui/icons/Functions';
-import GavelIcon from '@material-ui/icons/Gavel';
-import AssessmentIcon from '@material-ui/icons/Assessment';
-import VisibilityOffIcon from '@material-ui/icons/VisibilityOff';
+import ShortTextIcon from '@material-ui/icons/ShortText';
+import MusicNoteIcon from '@material-ui/icons/MusicNote';
+import CakeIcon from '@material-ui/icons/Cake';
+import FlightIcon from '@material-ui/icons/Flight';
 import ProjectCard from './project_card';
 import Typography from '@material-ui/core/Typography'
 import { Container, Link } from '@material-ui/core'
 import Grid from '@material-ui/core/Grid'
 import { makeStyles } from '@material-ui/core/styles';
-import InstagramIcon from '@material-ui/icons/Instagram';
-import YouTubeIcon from '@material-ui/icons/YouTube';
-import ShareIcon from '@material-ui/icons/Share';
 
 const useStyles = makeStyles((theme) => ({
   gridList: {
@@ -40,151 +32,121 @@ export default function Projects() {
     </Grid></Container>
 }
 
-const cardInfo = [{
-  avatar: <PetsIcon />,
-  title: "We Actually Rate Dogs",
-  useless: true,
-  image: 'ward.PNG',
+const cardInfo = [
+  {
+  avatar: <HttpIcon />,
+  title: "This Site",
+  subheader: 'Valentine\'s Day 2022',
+  image: 'recursive.png',
   text: <><Typography variant="body2" color="textSecondary" component="p">
-    We Rate Dogs is an extremely popular twitter account that purports to rate dogs, but actually gives all of them a score >10/10. In an attempt to make this more rigorous, I used a neural network to evaluate the picture of the dog in the tweet, then created a twitter bot to automatically respond with the dog's actual rating.
-  </Typography>
-    <br />
-    <Typography variant="body2" color="textSecondary" component="p">
-      The project was… divisive. Has been defunct since the account was blocked by We Rate Dogs October 2020.
-  </Typography></>,
+    Site made to record all the presents I give Lacey
+   </Typography>
+  </>,
   links: [
-    { href: 'https://twitter.com/actuallyratedog', icon: <TwitterIcon /> },
-    { href: 'https://github.com/Xodarap/we-actually-rate-dogs', icon: <GitHubIcon /> },
-    { href: 'https://www.tiktok.com/@benthamite/video/6872167459504311557', icon: <TiktokIcon /> }
+    { href: '/', icon: <HttpIcon /> },
   ]
 },
-{
-  avatar: <SpeedIcon />,
-  title: "Check His Height",
-  useless: true,
-  image: 'chh.png',
-  text: <Typography variant="body2" color="textSecondary" component="p">
-    There was a brief trend on TikTok of creators attempting to measure the height of their Tinder matches by comparing the person to objects in their background. CheckHisHeight.com uses a computer vision system to automate this process.
- </Typography>,
-  links: [
-    { href: 'https://www.checkhisheight.com/', icon: <HttpIcon /> },
-    { href: 'https://www.tiktok.com/@benthamite/video/6842806740942146821', icon: <TiktokIcon /> }
-  ]
-},
-{
-  avatar: <MoodIcon />,
-  title: "Tiktok Beautiful",
-  useless: true,
-  image: 'ttb.png',
+  {
+  avatar: <FlightIcon />,
+  title: "Las Vegas",
+  subheader: 'Anniversary 2021',
+  image: 'anniversary.jpg',
   text: <><Typography variant="body2" color="textSecondary" component="p">
-    I discovered old documentation from TikTok indicating that part of their recommendation algorithm is based on how attractive
-    actors in each video are. I adapted a neural network
-    from <Link href="https://arxiv.org/pdf/1801.06345.pdf">Liang et al. (2018)</Link> and created a site which let users evaluate
-    their own attractiveness.
-</Typography>
-    <br />
-    <Typography variant="body2" color="textSecondary" component="p">
-      Some <Link href='https://www.tiktok.com/@benthamite/video/6842683376210644229'>users tried</Link> to use it to optimize their appearance. Has been defunct since receiving a cease-and-desist letter from TikTok in 2020.
- </Typography></>,
+    Trip to Vegas for our second Anniversary
+   </Typography>
+  </>,
+  links: []
+},
+  {
+  avatar: <CakeIcon />,
+  title: "Halloween Party",
+  subheader: 'Halloween 2021',
+  image: 'halloween.jpg',
+  text: <><Typography variant="body2" color="textSecondary" component="p">
+    Since Lacey was sad that I would be out of town for Halloween I 
+    tried to organize a party for us and some friends
+   </Typography>
+  </>,
+  links: []
+},
+  {
+  avatar: <MusicNoteIcon />,
+  title: "Interior Crocodile Alligator",
+  subheader: 'Lacey\'s Birthday 2021',
+  image: 'Crocodile.png',
+  text: <><Typography variant="body2" color="textSecondary" component="p">
+    Harlem Renaissance jazz style song commissioned for Lacey's' birthday
+   </Typography>
+  </>,
   links: [
-    { href: 'https://www.tiktok.com/@benthamite/video/6838386972445248773', icon: <TiktokIcon /> }
+    { href: '/images/Crocodile Alligator.pdf', icon: <ImageIcon /> },
+    { href: 'audio/Interior Crocodile Alligator.mp4', icon: <MusicNoteIcon /> },
   ]
 },
-{
-  avatar: <FaceIcon />,
-  title: "HairToHelp.us",
-  useless: true,
-  image: 'hthu.png',
-  text: <Typography variant="body2" color="textSecondary" component="p">
-    Analyzes your face using facial recognition algorithms, and compares your facial proportions to averages, then recommends hairstyles which exaggerate/minimize features based on that comparison.
-</Typography>,
+  {
+  avatar: <ImageIcon />,
+  title: "Shigella painting",
+  subheader: 'Valentine\'s Day 2021',
+  image: 'Colorful revised 2 small.png',
+  text: <><Typography variant="body2" color="textSecondary" component="p">
+    Artwork commissioned to celebrate Valentine's Day. The primary focal point shows Lacey using Python to defeat Shigella 
+        (celebrating the CDC updating their treatment guidelines in response to Lacey's research).
+        In the background are the number of animals it's estimated that Lacey has saved by being vegetarian.
+   </Typography>
+  
+  </>,
   links: [
-    { href: 'https://hairtohelp.us/', icon: <HttpIcon /> },
-    { href: 'https://github.com/Xodarap/hair-recommender', icon: <GitHubIcon /> },
+    { href: '/images/Colorful revised 2.png', icon: <ImageIcon /> },
   ]
 },
-{
-  avatar: <FaceIcon />,
-  title: "2Face2Furious",
-  useless: true,
-  image: '2f2f.png',
-  text: <Typography variant="body2" color="textSecondary" component="p">
-    I made a <Link href='https://www.tiktok.com/@benthamite/video/6862752188540767493'>TikTok video</Link> about using machine learning to evaluate cosmetics, which was popular.
-        This site lets users run that code on their own images, to identify how well various cosmetic
-        products cover up wrinkles and match their skin color.
-  </Typography>,
-  links: [
-    { href: 'https://2face2furious.com/', icon: <HttpIcon /> },
-    { href: 'https://github.com/Xodarap/cosmetics-ui', icon: <GitHubIcon /> },
-  ]
+  {
+  avatar: <FlightIcon />,
+  title: "Trip to San Diego",
+  subheader: 'Christmas 2020',
+  image: 'San Diego.png',
+  text: <><Typography variant="body2" color="textSecondary" component="p">
+   </Typography>
+  
+  </>,
+  links: [ ]
 },
-{
-  avatar: <FunctionsIcon />,
-  title: "Rice Mathematical Purity Test",
-  useless: true,
-  image: 'mpt.png',
-  text: <Typography variant="body2" color="textSecondary" component="p">
-    Inspired by the classic Rice Purity Test, this site lets users evaluate their mathematical
-    purity.
-  </Typography>,
-  links: [
-    { href: 'https://mathpuritytest.com/', icon: <HttpIcon /> },
-    { href: 'https://github.com/Xodarap/math-purity', icon: <GitHubIcon /> },
-  ]
+  {
+  avatar: <ShortTextIcon />,
+  title: "Sonnet 130v2: Vine Girl",
+  subheader: 'Lacey\'s Birthday 2020',
+  image: '',
+  text: <><Typography variant="body2" color="textPrimary" component="p">
+My girl has never been to oovoo javer<br/>
+Nor has she tasted fre shavoca do<br/>
+And yet when we're at home together<br/>
+She still tells me: country boy, I love you<br/><br/>
+My girl has the most amazing smile<br/>
+And she always washes her and her clothes<br/>
+You know she steps the fuck up unlike Kyle<br/>
+And she is thicker than a bowl of oats<br/><br/>
+She would never spill in Valentino<br/>
+Like hurricane tortilla she's got speed<br/>
+And when I wake her she just says hello<br/>
+She's 19 but never learned to read<br/><br/>
+But I wrote a sonnet for her birthday<br/>
+At her birthday party on her birthday
+   </Typography>
+  </>,
+  links: []
 },
-{
-  avatar: <GavelIcon />,
+  {
+  avatar: <HttpIcon />,
   title: "Pretty Federal Register",
-  useless: false,
-  image: 'pfr.png',
-  text: <Typography variant="body2" color="textSecondary" component="p">
-    All US regulations are published in the Federal Register. These are usually plaintext
-    documents which are thousands of pages long. Pretty Federal Register is a browser extension that
-    adds navigational
-    features like a table of contents, and indicates where in the regulatory hierarchy each
-    section is.
-  </Typography>,
+  subheader: 'Valentine\'s Day 2020',
+  image: 'pfrpng.png',
+  text: <><Typography variant="body2" color="textSecondary" component="p">
+    To celebrate Lacey's love of bureaucracy, I updated my Federal Register extension
+    to  wwish her a happy Valentine's Day.
+   </Typography>
+  </>,
   links: [
-    { href: 'https://chrome.google.com/webstore/detail/pretty-federal-register/cgjlhmppbpnbbjlpjjoeondekegbnndc', icon: <HttpIcon /> },
     { href: 'https://github.com/Xodarap/pretty-federal-register', icon: <GitHubIcon /> },
-  ]
-},
-{
-  avatar: <VisibilityOffIcon />,
-  title: "Paranoid Browsing",
-  useless: false,
-  image: 'pb.png',
-  text: <Typography variant="body2" color="textSecondary" component="p">
-    Browser extension which browses the web at random the background, to confuse anyone attempting
-to build a profile of your behavior. This project was <Link href='https://www.youtube.com/watch?v=88gTep9Mh_Q'>briefly featured</Link> on the cable news channel RT.
-  </Typography>,
-  links: [
-    { href: 'https://github.com/Xodarap/Paranoid-Browsing', icon: <GitHubIcon /> },
-  ]
-},
-{
-  avatar: <AssessmentIcon />,
-  title: "Statistok",
-  useless: false,
-  image: 's.png',
-  text: <Typography variant="body2" color="textSecondary" component="p">
-    I developed a bunch of tools around TikTok analytics as a result of optimizing my own account.
-    Others asked for access to these analytics, and it turned into a company, which currently has one employee (apart from me).
- </Typography>,
-  links: [
-    { href: 'https://Statistok.com/', icon: <HttpIcon /> },
-  ]
-},
-{
-  avatar: <ShareIcon />,
-  title: "Social Medias",
-  useless: true,
-  image: 'tt.jpeg',
-  text: <Typography variant="body2" color="textSecondary" component="p">I'm most active on TikTok</Typography>,
-  links: [
-    { href: 'https://www.tiktok.com/@benthamite', icon: <TiktokIcon /> },
-    { href: 'https://www.instagram.com/ben.thamite/', icon: <InstagramIcon /> },
-    { href: 'https://www.youtube.com/channel/UCVqG8QBdDmVL3aPOJLmI1Vw', icon: <YouTubeIcon /> },
+    { href: 'https://chrome.google.com/webstore/detail/pretty-federal-register/cgjlhmppbpnbbjlpjjoeondekegbnndc', icon: <HttpIcon /> },
   ]
 },
 ]

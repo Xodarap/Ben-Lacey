@@ -18,12 +18,12 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-export default function ProjectCard({ avatar, title, useless, image, text, links }) {
+export default function ProjectCard({ avatar, title, subheader, image, text, links}) {
   const classes = useStyles();
 
   return <Card className={classes.root}>
-    <CardHeader avatar={avatar} title={title} subheader={useless ? "Useless Project" : "Possibly Useful Project"} />
-    <CardMedia className={classes.media} image={`/images/${image}`} />
+    <CardHeader avatar={avatar} title={title} subheader={subheader} />
+    {image && <CardMedia className={classes.media} image={`/images/${image}`} />}
     <CardContent>
       {text}
     </CardContent>
