@@ -3,6 +3,7 @@ import GitHubIcon from '@material-ui/icons/GitHub';
 import HttpIcon from '@material-ui/icons/Http';
 import ShortTextIcon from '@material-ui/icons/ShortText';
 import MusicNoteIcon from '@material-ui/icons/MusicNote';
+import HighlightIcon from '@material-ui/icons/Highlight';
 import CakeIcon from '@material-ui/icons/Cake';
 import FlightIcon from '@material-ui/icons/Flight';
 import ProjectCard from './project_card';
@@ -130,6 +131,17 @@ And when I wake her she just says hello<br/>
 She's 19 but never learned to read<br/><br/>
 But I wrote a sonnet for her birthday<br/>
 At her birthday party on her birthday
+   </Typography>
+  </>,
+  links: []
+},
+  {
+  avatar: <HighlightIcon />,
+  title: "Otoscope",
+  subheader: 'Lacey\'s Birthday 2020',
+  image: 'otoscope.jpeg',
+  text: <><Typography variant="body2" color="textPrimary" component="p">
+Gross
    </Typography>
   </>,
   links: []
